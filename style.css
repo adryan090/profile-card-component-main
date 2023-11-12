@@ -103,6 +103,7 @@ main {
 
 .bio .name {
   font-weight: 700;
+  color: hsl(229, 23%, 23%);
 }
 
 .bio .age {
@@ -130,6 +131,7 @@ main {
 }
 
 .stat span:first-child {
+  color: hsl(229, 23%, 23%);
   font-weight: 700;
 }
 
