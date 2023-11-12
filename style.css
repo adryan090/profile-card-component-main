@@ -30,26 +30,34 @@ main {
 .top-img-container,
 .bottom-img-container {
   position: absolute;
-  width: 800px;
-  height: 800px;
+  max-width: 50%;
   z-index: -1;
 }
 
 .top-img-container {
-  transform: translate(-35%, -35%);
   top: 0;
   left: 0;
 }
 
 .bottom-img-container {
-  transform: translate(35%, 35%);
   bottom: 0;
   right: 0;
 }
 
+.top-img-container img,
+.bottom-img-container img {
+  width: 150%;
+}
 .card-main {
   display: flex;
   flex-direction: column;
+}
+
+.top-img-container img {
+  transform: translate(-30%, -60%);
+}
+.bottom-img-container img {
+  transform: translate(0%, 55%);
 }
 
 .card-top,
@@ -143,4 +151,13 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 480px) {
+  .top-img-container img {
+    transform: translate(-20%, -30%);
+  }
+  .bottom-img-container img {
+    transform: translate(20%, 25%);
+  }
 }
